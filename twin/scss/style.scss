@@ -1,0 +1,208 @@
+/* # Genesis Child Theme 
+Theme Name: Twin by mono voce
+Theme URI: https://github.com/mbernth/Twin_website
+Description: This is a theme based on Brighton by mono voce, created for the Genesis Framework.
+Author: mono voce aps
+Author URI: http://www.monovoce.com/
+Template: genesis
+Version: 1.0.0
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Table of Contents
+===================================================================================
+
+# HTML5 Reset
+	## Baseline Normalize
+	## Box Sizing
+*/
+	@import "reset";
+
+/*
+# Mixins
+	## Colours
+	## Typography
+	## Border Radius
+	## Gradients
+	## Grid
+*/
+	@import "mixins";
+
+/*
+# Tint and Shade
+*/
+	@import "tint_shade";
+
+/*
+# Swatches
+# Style Guide
+*/
+	@import "swatches";
+	@import "style_guide";
+
+/*
+# SVG Icons
+*/
+	@import "svg_icomoon";
+
+/*
+# Defaults
+	## Typographical Elements
+	## Headings
+	## Objects
+	## Forms
+	## Tables
+	## Screen Reader Text
+*/
+	@import "defaults";
+
+/*
+ # Structure, Layout and Grid
+	## Site Containers
+	### Site Containers Full-width
+	## Grid Containers
+	### Grid Containers coloured backgrounds
+	### Grid Containers - Site Containers
+*/
+	@import "structure_layout";
+
+/*
+# Flexible Grid
+	## Flexible Grid - Fallback
+	## Flexible Grid - CSS Grid
+*/
+	@import "flexible_grids_fallback";
+	@import "flexible_grids";
+	/* Temperary hidden structure
+	@import "flexible_grids_fallback";
+	@import "flexible_grids";
+	*/
+	
+/*
+# Common Classes
+	## Avatar
+	## Genesis
+	## Titles
+	## WordPress
+*/
+	@import "common_classes";
+
+/*
+# Widgets
+	## Featured Content
+*/
+	@import "widgets";
+
+/*
+# Plugins
+	## Genesis eNews Extended
+	## Skip Links
+*/
+	@import "plugins";
+	@import "owl_carousel";
+	@import "owl_theme_alt";
+	@import "owl_transitions";
+	@import "quotes";
+	@import "accordion";
+
+/*
+	@import "timeline";
+	@import "push";
+	@import "slider";
+	@import "slider_custom";
+	@import "preview";
+	@import "flickity";
+	@import "gravity_forms";
+*/
+/*
+# Site Header
+	## Title Area
+	## Widget Area
+	## Before header
+*/
+	@import "site_header";
+
+/*
+# Site Navigation
+	## Accessible Menu
+	## Site Header Navigation
+	## Primary Navigation
+	## Secondary Navigation
+	## Responsive Menu
+	## Language Menu
+*/
+	@import "site_navigation_original";
+	@import "site_navigation_max800";
+
+/*
+	@import "site_navigation_hamburger";
+
+	@import "site_navigation_hamburger";
+	@import "site_navigation";
+*/
+
+/*
+# Content Area
+	## Entries
+	## Buttons
+	## Entry Meta
+	## Pagination
+	## Comments
+	## Featured image
+	## Case grid
+*/
+	@import "content_area";
+/*
+	@import "site_team";
+	@import "site_team_slide";
+	@import "pin";
+*/
+
+/*
+# Sidebars
+*/
+	@import "sidebars";
+
+/*
+# Footer Widgets
+	## Social Icons
+*/
+	@import "footer_widgets";
+
+/*
+# Site Footer
+*/
+	@import "site_footer";
+
+/*
+# Pages
+	## Frontpage
+*/
+	@import "page_frontpage";
+
+/*
+# Post Types
+	## Cases
+
+	@import "posttype_cases";
+*/
+/*
+# Animations
+*/
+	@import "animation_keyframes";
+
+/*
+# Media Queries
+	# Small
+	# Medium
+	# Large
+*/
+	@import "media_queries_small";
+	@import "media_queries_medium";
+	@import "media_queries_large";
+
+/*
+- Print Styles
+*/
+	@import "print_styles";

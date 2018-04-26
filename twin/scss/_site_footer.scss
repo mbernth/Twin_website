@@ -1,0 +1,23 @@
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	display: block;
+	float: left;
+	width: 100%;
+	position:relative;
+	background-color: $color-black;
+	@include font(1.0, 1.2);
+	font-weight:400;
+	color:$color-white;
+	line-height: 1;
+	padding: 15px 0;
+	text-align: center;
+	a{
+		color: $color-white;
+	}
+}
+
+.site-footer p {
+	margin-bottom: 0;
+}

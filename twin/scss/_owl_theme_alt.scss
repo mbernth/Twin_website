@@ -1,0 +1,137 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	text-align: center;
+	.owl-pagination{
+		position: absolute;
+		width: 100%;
+		bottom: 20px;
+	}
+	.owl-buttons{
+		position: absolute;
+		width: 100%;
+		top: 45%;
+		.owl-prev {
+    		position: absolute;
+    		width: 50px;
+    		height: 50px;
+    		border: 2px solid #fafafa;
+    		border: 2px solid rgba(255, 255, 255, 1);
+        	border-top-width: 2px;
+        	border-right-width: 2px;
+        	border-top-style: solid;
+        	border-right-style: solid;
+        	border-top-color: rgba(255, 255, 255, 1);
+       	 	border-right-color: rgba(255, 255, 255, 1);
+    		left: 2%;
+    		border-right: none;
+   			border-top: none;
+    		text-indent: -90000px;
+    		cursor: pointer;
+			opacity: 0.6;
+    		-webkit-transform: rotate(45deg);
+    		-moz-transform: rotate(45deg);
+    		-o-transform: rotate(45deg);
+    		-ms-transform: rotate(45deg);
+    		transform: rotate(45deg);
+			transition: all 0.3s ease-in-out;
+			&:hover{
+				opacity: 1;
+			}
+		}
+		.owl-next {
+    		position: absolute;
+    		width: 50px;
+    		height: 50px;
+    		border: 2px solid #fafafa;
+    		border: 2px solid rgba(255, 255, 255, 1);
+        	border-bottom-width: 2px;
+        	border-left-width: 2px;
+        	border-bottom-style: solid;
+        	border-left-style: solid;
+        	border-bottom-color: rgba(255, 255, 255, 1);
+        	border-left-color: rgba(255, 255, 255, 1);
+    		right: 2%;
+    		border-left: none;
+    		border-bottom: none;
+    		text-indent: -90000px;
+    		cursor: pointer;
+    		-webkit-transform: rotate(45deg);
+    		-moz-transform: rotate(45deg);
+    		-o-transform: rotate(45deg);
+    		-ms-transform: rotate(45deg);
+    		transform: rotate(45deg);
+			transition: all 0.3s ease-in-out;
+			&:hover{
+				opacity: 1;
+			}
+		}
+
+
+	}
+}
+
+/* Styling Next and Prev buttons */
+/*
+.owl-theme .owl-controls .owl-buttons div{
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background: #869791;
+	filter: Alpha(Opacity=50);
+	opacity: 0.5;
+}
+*/
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/*
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	filter: Alpha(Opacity=100);
+	opacity: 1;
+	text-decoration: none;
+}
+*/
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	background-color: $color-primary-two;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	background-color: $color-primary-one;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}

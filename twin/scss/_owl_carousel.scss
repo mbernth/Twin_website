@@ -1,0 +1,164 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	float: left;
+	height: 60vh;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/* # Slider
+--------------------------------------------------- */
+
+.has-owl-slider .site-inner{
+	padding-top: 0;
+}
+
+.owl-carousel .featured-section{
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 0;
+	.image-section{
+		height: 60vh;
+		/* border-bottom: 10vh solid rgba(240, 77, 70, .7); */
+	}
+}
+
+.statements{
+	position: absolute;
+	width: 100%;
+	height: 60vh;
+	margin-top: 111px;
+	h1{
+		padding: 10px 20px;
+    	position: absolute;
+		display: block;
+    	overflow: hidden;
+		color: $color-black;
+		background-color: $color-white;
+		text-transform: uppercase;
+		@include font(2.4, 2.4);
+		font-weight: 900;
+		a{
+			color: $color-black;
+			&:hover{
+				color:$color-primary;
+			}
+		}
+		&:nth-child(1){
+			left: calc(50% - 120px);
+			top: calc(50% - 76px);
+			animation: slide 2s 1s ease-in-out both;
+		}
+		&:nth-child(2){
+			left: calc(50% - 140px);
+			top: calc(50% - 21px);
+			animation: slide 2s 2s ease-in-out both;
+		}
+		&:nth-child(3){
+			left: calc(50% - 127px);
+			top: calc(50% - -34px);
+			animation: slide 2s 3s ease-in-out both;
+		}
+	}
+}
+
+.slide_content h1{
+    padding: 20px;
+    position: absolute;
+	overflow: hidden;
+	color: $color-black;
+	background-color: $color-white;
+	text-transform: uppercase;
+}
+.frame0 .slide_content h1{
+	left: calc(50% - 400px);
+    top: calc(50% - 76px);
+}
+.frame1 .slide_content h1{
+	left: calc(50% - 400px);
+    top: calc(50% - 76px);
+}
+.frame2 .slide_content h1{
+	left: calc(50% - 400px);
+    top: calc(50% - 76px);
+}
+
+.slide_content h1{
+	color: $color-black;
+	word-wrap: break-word;
+	margin-bottom: 0px;
+}
+
+.active .slide_content h1{
+	-webkit-animation: slide 2s ease-in-out both;
+	-moz-animation: slide 2s ease-in-out both;
+	-o-animation: slide 2s ease-in-out both;
+	-ms-animation: slide 2s ease-in-out both;
+    animation: slide 2s ease-in-out both;
+}
+

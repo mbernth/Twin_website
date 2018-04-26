@@ -1,0 +1,1 @@
+$(function(){$.CBPQTRotator.defaults={speed:1e3,easing:"ease",interval:2e4},$("#cbp-qtrotator").cbpQTRotator()});

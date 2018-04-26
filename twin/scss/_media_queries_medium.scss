@@ -1,0 +1,403 @@
+/* # Medium screens
+---------------------------------------------------------------------------------------------------- */
+/* ## 64em / 1024 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+
+
+
+@media only screen and (min-width: 64em) {
+
+@import "flexible_grids_fallback_medium";
+	
+/* # Defaults
+---------------------------------------------------------------------------------------------------- */
+/* ## Typographical Elements
+---------------------------------------------------------------------- */
+/* ## Headings
+---------------------------------------------------------------------- */
+/* ## Objects
+---------------------------------------------------------------------- */
+/* ## Forms
+---------------------------------------------------------------------- */
+/* ## Tables
+---------------------------------------------------------------------- */
+/* ## Screen Reader Text
+---------------------------------------------------------------------- */
+	
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+/* ## Site Containers
+---------------------------------------------------------------------- */
+
+.content-sidebar .site-inner,
+.sidebar-content .site-inner,
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	max-width: 920px;
+}
+
+
+@supports (display: grid) {
+	
+	.content-sidebar .site-inner .content-sidebar-wrap,
+	.sidebar-content .site-inner .content-sidebar-wrap{
+		display: grid;
+		grid-template-columns:4fr 2fr;
+		grid-column-gap:30px;
+		grid-row-gap:30px;
+		margin-bottom: 30px;
+	}
+	.sidebar-content .site-inner .content-sidebar-wrap{
+		grid-template-columns:2fr 4fr;
+		.content{
+			order: 2;
+		}
+		.sidebar{
+			order: 1;
+		}
+	}
+	
+	.content-sidebar-sidebar .site-inner,
+	.sidebar-sidebar-content .site-inner,
+	.sidebar-content-sidebar .site-inner{
+		display: grid;
+		grid-template-columns:5fr 1fr;
+		grid-column-gap:30px;
+		grid-row-gap:30px;
+		margin-bottom: 30px;
+		.content-sidebar-wrap{
+			display: grid;
+			grid-template-columns:3fr 1fr;
+			grid-column-gap:30px;
+			grid-row-gap:30px;
+		}
+		.sidebar-secondary{
+			margin-top: 0;
+		}
+	}
+	
+	.sidebar-sidebar-content .site-inner{
+		grid-template-columns:1fr 5fr;
+		.content-sidebar-wrap{
+			grid-template-columns:1fr 3fr;
+			order: 2;
+			.content{
+				order: 2;
+			}
+			.sidebar{
+				order: 1;
+			}
+		}
+		.sidebar-secondary{
+			order: 1;
+		}
+	}
+	
+	.sidebar-content-sidebar .site-inner{
+		grid-template-columns:1fr 5fr;
+		.content-sidebar-wrap{
+			order: 2;
+		}
+		.sidebar-secondary{
+			order: 1;
+		}
+	}
+	
+}
+/* ### Site Containers Full-width 
+--------------------------------------------- */
+.home-section.full-width-content .site-inner .content .entry{
+	padding: 80px 0;
+	max-width: 920px;
+}
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+.gridcontainer{
+	.row_headline{
+		max-width: 920px;
+	}
+	.wrap{
+		max-width: 920px;
+	}
+}
+.gridcontainer{
+	.backimage{
+		min-height: 400px;
+	}
+}
+@supports (display: grid) {
+.gridcontainer.coll2{
+	.wrap{
+		grid-template-columns:repeat(2, 1fr);
+	}
+}
+.gridcontainer.coll3{
+	.wrap{
+		grid-template-columns:repeat(3, 1fr);
+	}
+}
+.gridcontainer.coll4{
+	.wrap{
+		grid-template-columns:repeat(4, 1fr);
+	}
+}
+.gridcontainer.coll5{
+	.wrap{
+		grid-template-columns:repeat(5, 1fr);
+	}
+}
+.gridcontainer.coll6{
+	.wrap{
+		grid-template-columns:repeat(6, 1fr);
+	}
+}
+	
+.content-sidebar .site-inner,
+.sidebar-content .site-inner{
+	.gridcontainer.coll3{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+	.gridcontainer.coll4{
+		.wrap{
+			grid-template-columns:repeat(2, 1fr);
+		}
+	}
+	.gridcontainer.coll5{
+		.wrap{
+			grid-template-columns:repeat(2, 1fr);
+		}
+	}
+	.gridcontainer.coll6{
+		.wrap{
+			grid-template-columns:repeat(2, 1fr);
+		}
+	}
+}
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	.gridcontainer.coll3{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+	.gridcontainer.coll4{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+	.gridcontainer.coll5{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+	.gridcontainer.coll6{
+		.wrap{
+			grid-template-columns:repeat(1, 1fr);
+		}
+	}
+}
+	
+}
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+
+/* # Common Classes
+---------------------------------------------------------------------------------------------------- */
+/* ## Avatar
+---------------------------------------------------------------------- */
+/* ## Genesis
+---------------------------------------------------------------------- */
+.archive-description,
+.author-box {
+	max-width: 920px;
+}
+/* ## Titles
+---------------------------------------------------------------------- */
+/* ## WordPress
+---------------------------------------------------------------------- */
+
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+/* ## Featured Content
+---------------------------------------------------------------------- */
+
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+/* Owl Carousel
+--------------------------------------------- */
+.statements{
+	margin-top: 140px;
+	h1{
+		@include font(3.2, 3.2);
+		&:nth-child(1){
+			left: calc(50% - 400px);
+			top: calc(50% - 106px);
+			animation: slide 2s 1s ease-in-out both;
+		}
+		&:nth-child(2){
+			left: calc(50% - 450px);
+			top: calc(50% - 39px);
+			animation: slide 2s 2s ease-in-out both;
+		}
+		&:nth-child(3){
+			left: calc(50% - 429px);
+			top: calc(50% - -28px);
+			animation: slide 2s 3s ease-in-out both;
+		}
+	}
+}
+/* Accordion
+--------------------------------------------- */
+.accordion__heading a{
+	cursor: default;
+}
+.accordion__heading a:hover{
+	color: $color-primary;
+	cursor: default;
+}
+.accordion__heading .accordion__toggle {
+    cursor: default;
+}
+.accordion__toggle {
+	.icon-arrow-down5{
+		display: none;
+	}
+	.icon-arrow-up4{
+		display: none;
+	}
+}
+.accordion__toggle.collapsed {
+	margin-bottom: 0;
+	background-color: $color-secondary;
+	.icon-arrow-down5{
+		display: none;
+	}
+	.icon-arrow-up4{
+		display: none;
+	}
+}
+.collapse,
+.accordion__body{
+	height: auto !important;
+	opacity: 1;
+}
+	
+/* ## Genesis eNews Extended
+---------------------------------------------------------------------- */
+/* ## Skip Links
+---------------------------------------------------------------------- */
+
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+.site-header .wrap {
+	max-width:90%;
+}
+/* ## Title Area
+---------------------------------------------------------------------- */
+.title-area {
+	margin-left: 0;
+}
+/* ## Widget Area
+---------------------------------------------------------------------- */
+/* ## Before header
+---------------------------------------------------------------------- */
+
+/* # Site Navigation
+---------------------------------------------------------------------------------------------------- */
+.genesis-nav-menu a {
+	padding: 15px 0 15px 15px;
+    letter-spacing: 0.12em;
+}
+/* ## Accessible Menu
+---------------------------------------------------------------------- */
+/* ## Site Header Navigation
+---------------------------------------------------------------------- */
+/* ## Primary Navigation
+---------------------------------------------------------------------- */
+.nav-primary .wrap {
+    max-width: 100%;
+}
+/* ## Secondary Navigation
+---------------------------------------------------------------------- */
+/* ## Responsive Menu
+---------------------------------------------------------------------- */
+/* ## Language Menu
+---------------------------------------------------------------------- */
+/* @import "site_navigation"; */
+
+/* # Content Area
+---------------------------------------------------------------------------------------------------- */
+/* ## Entries
+---------------------------------------------------------------------- */
+.content .post{
+	img{
+		@include structure(445, 920)
+	}
+}
+/* ## Buttons
+---------------------------------------------------------------------- */
+/* ## Entry Meta
+---------------------------------------------------------------------- */
+/* ## Pagination
+---------------------------------------------------------------------- */
+/* ## Comments
+---------------------------------------------------------------------- */
+.comment-respond,
+.entry-comments,
+.entry-pings {
+	max-width: 920px;
+}
+/* ## Featured image
+---------------------------------------------------------------------- */
+/* ## Case grid
+---------------------------------------------------------------------- */
+
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+.sidebar {
+	margin-top: 0px;
+	float: inherit;
+}
+	
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+.footer-widgets .wrap {
+	max-width: 920px;
+}
+/* ## Social Icons
+---------------------------------------------------------------------- */
+
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+/* # Animations
+---------------------------------------------------------------------------------------------------- */
+/* ## Keyframes
+---------------------------------------------------------------------- */
+/* ### Move X and Roll 360 degrees
+--------------------------------------------- */
+/* ### Move up
+--------------------------------------------- */
+/* ### Move down
+--------------------------------------------- */
+/* ### Fade in
+--------------------------------------------- */
+/* ### Scale down
+--------------------------------------------- */
+/* ### Fade out
+--------------------------------------------- */
+/* ### Slide with opacity
+--------------------------------------------- */
+/* ### Scale up
+--------------------------------------------- */
+
+	
+}
+/* # Medium screens end
+---------------------------------------------------------------------------------------------------- */

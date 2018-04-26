@@ -1,0 +1,32 @@
+/* # Small screens
+---------------------------------------------------------------------------------------------------- */
+/* ## 55.625emem / 890 pixel
+---------------------------------------------
+---------------------------------------------
+--------------------------------------------- */
+
+
+
+/* # Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+/* Grid fallback */
+.footer-widgets .wrap .widget-area{
+	float: left;
+	@include grid(2, 30, 800);
+	margin-bottom: 30px;
+}
+/* Grid fallback end */
+	
+@supports (display: grid) {
+	
+/* Grid fallback reset */
+.footer-widgets .wrap .widget-area{
+	float: none;
+	@include grid(1, 0, 800);
+	margin-bottom: inherit;
+}
+/* Grid fallback reset end */	
+
+}
+/* ## Social Icons
+---------------------------------------------------------------------- */

@@ -1,0 +1,128 @@
+body{
+	font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", sans-serif;
+	font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4,
+h5{
+	font-family: museo, sans-serif;
+	font-weight: 500;
+}
+h1{
+	font-weight: 700;
+}
+ul{
+	margin-bottom: 40px;
+	padding-left: 20px;
+}
+li{
+	margin-bottom: 20px;
+}
+.asterisk{
+	color:#bf1e2e;
+}
+label{
+	color: #fff;
+}
+.response{
+	color: #fff;
+    padding: 20px 0 30px;
+    font-size: 18px;
+    font-style: italic;
+}
+footer{
+	background-color:#4c5d67 ;
+	color: #fff;
+	padding: 40px 0 30px;
+	margin-top: -30px;
+}
+
+.jumbotron .btn-primary {
+    color: #008074;
+    background-color: #FFF;
+    border-color: transparent;
+}
+.btn-lg {
+    padding: 10px 32px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 23px;
+}
+.hero-image{
+    min-height: 150px;
+    background-size: cover;
+    background-position: 50% 50%;
+	margin-top: -40px;
+	margin-bottom: 20px;
+}
+
+header{
+	border-top: 10px solid #bf1e2e;
+}
+.logo-header{
+	width: 290px;
+	margin: 0 auto;
+}
+.logo{
+	padding: 40px 0;
+	width: 290px;
+}
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #008074;
+}
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron h4,
+.jumbotron h5,
+.jumbotron .h1 {
+  color: #fff;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+  color: #fff;
+}
+.jumbotron > hr {
+  border-top-color: #d5d5d5;
+}
+.container .jumbotron,
+.container-fluid .jumbotron {
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+.jumbotron .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+.hero-image{
+    min-height: 350px;
+	}
+  .logo-header{
+	width: 450px;
+}
+.logo{
+	width: 450px;
+}
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .jumbotron,
+  .container-fluid .jumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    font-size: 48px;
+  }
+}

@@ -1,0 +1,165 @@
+/* # Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+	position:relative;
+	margin-top:0px;
+	width:100%;
+	float:left;
+	background-color: $color-primary;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition:    all 0.5s ease-in-out;
+	-ms-transition:     all 0.5s ease-in-out;
+	-o-transition:      all 0.5s ease-in-out;
+	transition:         all 0.5s ease-in-out;
+	z-index:1000;
+}
+.has-push-top .site-header,
+.featured-image .has-push-top .site-header,
+.featured-image .has-push-top .site-header.dark,
+.home-section .has-push-top .site-header,
+.home-section .has-push-top .site-header.dark {
+	margin-top:200px;
+}
+
+.site-header .wrap {
+	margin:0 auto;
+	max-width:100%;
+}
+
+
+/* ## Title Area
+---------------------------------------------------------------------- */
+
+.title-area {
+	float: left;
+	padding: 25px 0;
+	margin-left: 5%;
+}
+.title-area p {
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+}
+
+.header-full-width .title-area {
+	float:left;
+	width: 220px;
+}
+
+.site-title {
+	@include font(3.2, 3.2);
+	font-weight: 400;
+	line-height: 0;
+}
+
+.site-title a,
+.site-title a:hover,
+.site-title a:focus {
+	color: $color-black;
+}
+
+.title-area .site-title > a {
+    display: block;
+    margin-bottom: 0px;
+	text-indent: -9999px;
+}
+
+.site-description {
+	@include font(0, 0);
+	text-indent: -9999px;
+}
+
+.site-description,
+.site-title {
+	margin-bottom: 0;
+}
+
+.header-image .site-description,
+.header-image .site-title {
+	display: block;
+	text-indent: -9999px;
+}
+
+.site-logo {
+    display: block;
+}
+#site-logo{
+	width: 220px;
+	height: 31px;
+}
+
+/* ## Widget Area
+---------------------------------------------------------------------- */
+
+.site-header .widget-area {
+	float: right;
+	text-align: right;
+	@include structure(800, 1200);
+}
+
+/* ## Before header
+---------------------------------------------------------------------- */
+
+.before-header {
+	float: left;
+	padding:0px;
+	width:100%;
+	background-color: shade($color-primary, 40%);
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition:    all 0.5s ease-in-out;
+	-ms-transition:     all 0.5s ease-in-out;
+	-o-transition:      all 0.5s ease-in-out;
+	transition:         all 0.5s ease-in-out;
+	z-index:1000;
+	.widget_nav_menu{
+		margin-top: 12px;
+		margin-right: 18px;
+	}
+	.simple-social-icons ul li{
+		margin: 0px !important;
+		a{
+			background-color: $color-primary !important;
+			border-radius: 0px;
+			color: $color-white !important;
+			border: 0px #ffffff solid !important;
+			font-size: 16px;
+			padding: 10px 15px !important;
+			margin-left: 2px;
+			&:hover{
+				background-color: shade($color-primary, 20) !important;
+				border-radius: 0px;
+				color: $color-white !important;
+				border: 0px #ffffff solid !important;
+				font-size: 16px;
+				padding: 10px 15px !important;
+				margin-left: 2px;
+			}
+		}
+		
+	}
+}
+
+.before-header .wrap{
+	margin:0 auto;
+	max-width:100%;
+}
+.before-header .widget{
+	@include font(1, 1);
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	text-align:right;
+	color:$color-white;
+	float: right;
+}
+
+.before-header .menu a{
+	color: $color-white;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	&hover{
+		color: $color-accent-two;
+	}
+}

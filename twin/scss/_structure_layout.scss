@@ -1,0 +1,106 @@
+/* # Structure, Layout and Grid
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Site Containers
+---------------------------------------------------------------------- */
+
+.site-inner,
+.wrap {
+	margin: 0 auto;
+}
+
+.site-inner{
+	clear: both;
+	padding-top: 60px;
+	margin: 0 auto;
+	width:100%;
+}
+.content-sidebar .site-inner,
+.sidebar-content .site-inner,
+.content-sidebar-sidebar .site-inner,
+.sidebar-sidebar-content .site-inner,
+.sidebar-content-sidebar .site-inner{
+	width: 90%;
+	.gridcontainer.white{
+		.wrap,
+		.row_headline{
+			width: 100%;
+		}
+	}
+}
+
+/* ### Site Containers Full-width
+--------------------------------------------- */
+
+.full-width-content .site-inner .content .breadcrumb,
+.full-width-content .site-inner .content .entry{
+	width:90%;
+	margin: 0 auto;
+}
+.full-width-content .site-inner .content .entry{
+	margin-bottom: 30px;
+}
+.home-section.full-width-content .site-inner .content .entry{
+	padding: 40px 0;
+}
+/* ## Grid Containers
+---------------------------------------------------------------------- */
+.gridcontainer{
+	padding: 40px 0;
+	.row_headline{
+		width: 90%;
+    	margin: 0 auto;
+		margin: 0 auto 20px;
+	}
+	.wrap{
+		width: 90%;
+    	margin: 0 auto;
+		section{
+			padding: 30px 0 0;
+		}
+	}
+}
+.gridcontainer.non{
+	padding: 0;
+	.row_headline{
+		display: none;
+	}
+	.wrap{
+		width: 100%;
+		.wysiwyg{
+			margin: 0 auto;
+			padding: 60px 0;
+			width: 90%;
+		}
+	}
+}
+.gridcontainer{
+	.backimage{
+		min-height: 250px;
+		background-size: cover;
+    	background-position: 50% 50%;
+	}
+}
+.gridcontainer{
+	.gridimage{
+		min-height: 100%;
+		object-fit: cover;
+	}
+}
+
+/* ### Grid Containers coloured backgrounds
+--------------------------------------------- */
+.gridcontainer.black,
+.gridcontainer.grey{
+	padding: 60px 0;
+}
+.gridcontainer.black{
+	background-color: $color-black;
+	color: $color-white;
+	a.button:hover{
+		box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.35);
+	}
+}
+.gridcontainer.grey{
+	background-color: $color-secondary;
+}
