@@ -3,7 +3,7 @@
 include_once( get_template_directory() . '/lib/init.php' );
 
 //* Include Icons
-include_once( get_stylesheet_directory() . '/lib/svg_icomoon.php' );
+// include_once( get_stylesheet_directory() . '/lib/svg_icomoon.php' );
 
 //* Setup Theme
 include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );

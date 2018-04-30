@@ -63,7 +63,7 @@
 		},
 	"\/twin\/images\/android-chrome-192x192.png": {
 		"ft": 32768,
-		"iS": 18934,
+		"iS": 4339,
 		"oA": 0,
 		"oAP": "\/twin\/images\/android-chrome-192x192.png",
 		"oF": 0,
@@ -74,7 +74,7 @@
 		},
 	"\/twin\/images\/apple-touch-icon-114x114.png": {
 		"ft": 32768,
-		"iS": 9122,
+		"iS": 7896,
 		"oA": 0,
 		"oAP": "\/twin\/images\/apple-touch-icon-114x114.png",
 		"oF": 0,
@@ -85,7 +85,7 @@
 		},
 	"\/twin\/images\/apple-touch-icon-120x120.png": {
 		"ft": 32768,
-		"iS": 8452,
+		"iS": 1860,
 		"oA": 0,
 		"oAP": "\/twin\/images\/apple-touch-icon-120x120.png",
 		"oF": 0,
@@ -96,7 +96,7 @@
 		},
 	"\/twin\/images\/apple-touch-icon-144x144.png": {
 		"ft": 32768,
-		"iS": 12596,
+		"iS": 3403,
 		"oA": 0,
 		"oAP": "\/twin\/images\/apple-touch-icon-144x144.png",
 		"oF": 0,
@@ -107,7 +107,7 @@
 		},
 	"\/twin\/images\/apple-touch-icon-152x152.png": {
 		"ft": 32768,
-		"iS": 13884,
+		"iS": 7547,
 		"oA": 0,
 		"oAP": "\/twin\/images\/apple-touch-icon-152x152.png",
 		"oF": 0,
@@ -118,7 +118,7 @@
 		},
 	"\/twin\/images\/apple-touch-icon-180x180.png": {
 		"ft": 32768,
-		"iS": 14139,
+		"iS": 4434,
 		"oA": 0,
 		"oAP": "\/twin\/images\/apple-touch-icon-180x180.png",
 		"oF": 0,
@@ -129,7 +129,7 @@
 		},
 	"\/twin\/images\/apple-touch-icon-57x57.png": {
 		"ft": 32768,
-		"iS": 3368,
+		"iS": 2128,
 		"oA": 0,
 		"oAP": "\/twin\/images\/apple-touch-icon-57x57.png",
 		"oF": 0,
@@ -140,7 +140,7 @@
 		},
 	"\/twin\/images\/apple-touch-icon-60x60.png": {
 		"ft": 32768,
-		"iS": 3447,
+		"iS": 1037,
 		"oA": 0,
 		"oAP": "\/twin\/images\/apple-touch-icon-60x60.png",
 		"oF": 0,
@@ -151,7 +151,7 @@
 		},
 	"\/twin\/images\/apple-touch-icon-72x72.png": {
 		"ft": 32768,
-		"iS": 4644,
+		"iS": 1689,
 		"oA": 0,
 		"oAP": "\/twin\/images\/apple-touch-icon-72x72.png",
 		"oF": 0,
@@ -162,7 +162,7 @@
 		},
 	"\/twin\/images\/apple-touch-icon-76x76.png": {
 		"ft": 32768,
-		"iS": 4996,
+		"iS": 3019,
 		"oA": 0,
 		"oAP": "\/twin\/images\/apple-touch-icon-76x76.png",
 		"oF": 0,
@@ -173,7 +173,7 @@
 		},
 	"\/twin\/images\/favicon-16x16.png": {
 		"ft": 32768,
-		"iS": 548,
+		"iS": 171,
 		"oA": 0,
 		"oAP": "\/twin\/images\/favicon-16x16.png",
 		"oF": 0,
@@ -184,7 +184,7 @@
 		},
 	"\/twin\/images\/favicon-32x32.png": {
 		"ft": 32768,
-		"iS": 1319,
+		"iS": 265,
 		"oA": 0,
 		"oAP": "\/twin\/images\/favicon-32x32.png",
 		"oF": 0,
@@ -195,7 +195,7 @@
 		},
 	"\/twin\/images\/favicon-96x96.png": {
 		"ft": 32768,
-		"iS": 6705,
+		"iS": 1397,
 		"oA": 0,
 		"oAP": "\/twin\/images\/favicon-96x96.png",
 		"oF": 0,
@@ -213,7 +213,7 @@
 		},
 	"\/twin\/images\/largetile.png": {
 		"ft": 32768,
-		"iS": 38663,
+		"iS": 42982,
 		"oA": 0,
 		"oAP": "\/twin\/images\/largetile.png",
 		"oF": 0,
@@ -224,7 +224,7 @@
 		},
 	"\/twin\/images\/mediumtile.png": {
 		"ft": 32768,
-		"iS": 9932,
+		"iS": 2203,
 		"oA": 0,
 		"oAP": "\/twin\/images\/mediumtile.png",
 		"oF": 0,
@@ -235,7 +235,7 @@
 		},
 	"\/twin\/images\/smalltile.png": {
 		"ft": 32768,
-		"iS": 4470,
+		"iS": 1523,
 		"oA": 0,
 		"oAP": "\/twin\/images\/smalltile.png",
 		"oF": 0,
@@ -246,7 +246,7 @@
 		},
 	"\/twin\/images\/widetile.png": {
 		"ft": 32768,
-		"iS": 16068,
+		"iS": 6979,
 		"oA": 0,
 		"oAP": "\/twin\/images\/widetile.png",
 		"oF": 0,
