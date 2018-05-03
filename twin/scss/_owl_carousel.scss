@@ -18,7 +18,7 @@
 	position: relative;
 	width: 100%;
 	float: left;
-	height: 60vh;
+	height: 50vh;
 	-ms-touch-action: pan-y;
 }
 .owl-carousel .owl-wrapper{
@@ -83,7 +83,7 @@
 	max-width: 100%;
 	margin-bottom: 0;
 	.image-section{
-		height: 60vh;
+		height: 50vh;
 		/* border-bottom: 10vh solid rgba(240, 77, 70, .7); */
 	}
 }
@@ -91,8 +91,8 @@
 .statements{
 	position: absolute;
 	width: 100%;
-	height: 60vh;
-	margin-top: 111px;
+	height: 50vh;
+	margin-top: 117px;
 	h1{
 		padding: 10px 20px;
     	position: absolute;
@@ -101,8 +101,7 @@
 		color: $color-black;
 		background-color: $color-white;
 		text-transform: uppercase;
-		@include font(2.4, 2.4);
-		font-weight: 900;
+		@include font(2.6, 2.6);
 		a{
 			color: $color-black;
 			&:hover{
@@ -110,19 +109,19 @@
 			}
 		}
 		&:nth-child(1){
-			left: calc(50% - 120px);
+			left: 10%;
 			top: calc(50% - 76px);
 			animation: slide 2s 1s ease-in-out both;
 		}
 		&:nth-child(2){
-			left: calc(50% - 140px);
+			left: 10%;
 			top: calc(50% - 21px);
-			animation: slide 2s 2s ease-in-out both;
+			animation: slide 2s 2.5s ease-in-out both;
 		}
 		&:nth-child(3){
-			left: calc(50% - 127px);
+			left: 10%;
 			top: calc(50% - -34px);
-			animation: slide 2s 3s ease-in-out both;
+			animation: slide 2s 3.5s ease-in-out both;
 		}
 	}
 }

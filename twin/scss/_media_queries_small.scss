@@ -17,6 +17,29 @@
 ---------------------------------------------------------------------- */
 /* ## Headings
 ---------------------------------------------------------------------- */
+h1 {
+	@include font(4.2, 4.2);
+}
+
+h2 {
+	@include font(3.6, 3.6);
+}
+
+h3 {
+	@include font(3, 3);
+}
+
+h4 {
+	@include font(2.8, 2.8);
+}
+
+h5 {
+	@include font(2.6, 2.6);
+}
+
+h6 {
+	@include font(2, 2.8);
+}
 /* ## Objects
 ---------------------------------------------------------------------- */
 /* ## Forms
@@ -47,7 +70,8 @@
 .full-width-content .site-inner .content .entry,
 .full-width-content .site-inner .content .gridcontainer.coll1 .wrap,
 .full-width-content .site-inner .content .gridcontainer.coll1 .row_headline{
-	max-width: 760px;
+	width: 100%;
+	max-width: 680px;
 }
 .home-section.full-width-content .site-inner .content .entry{
 	margin: 0 auto;
@@ -57,6 +81,7 @@
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 .gridcontainer{
+	padding: 60px 0;
 	.row_headline{
 		max-width: 800px;
 	}
@@ -85,6 +110,16 @@
 }
 /* ## Titles
 ---------------------------------------------------------------------- */
+.archive-title {
+	@include font(4.6, 4.6);
+	margin-bottom:20px;
+}
+
+.entry-title {
+	@include font(4.6, 4.6);
+	margin-bottom:20px;
+	text-transform: uppercase;
+}
 /* ## WordPress
 ---------------------------------------------------------------------- */
 
@@ -101,21 +136,22 @@
 	margin-top: 140px;
 	h1{
 		padding: 10px 20px;
-		@include font(3.2, 3.2);
+		@include font(4.6, 4.6);
+		margin-bottom: 0;
 		&:nth-child(1){
-			left: calc(50% - 340px);
-			top: calc(50% - 106px);
+			left: 10%;
+			top: calc(50% - 122px);
 			animation: slide 2s 1s ease-in-out both;
 		}
 		&:nth-child(2){
-			left: calc(50% - 380px);
+			left: 10%;
 			top: calc(50% - 39px);
-			animation: slide 2s 2s ease-in-out both;
+			animation: slide 2s 2.5s ease-in-out both;
 		}
 		&:nth-child(3){
-			left: calc(50% - 359px);
-			top: calc(50% - -28px);
-			animation: slide 2s 3s ease-in-out both;
+			left: 10%;
+			top: calc(50% - -45px);
+			animation: slide 2s 3.5s ease-in-out both;
 		}
 	}
 }
@@ -146,11 +182,11 @@
 ---------------------------------------------------------------------------------------------------- */
 .header-full-width .title-area {
 	float:left;
-	width: 345px;
+	width: 165px;
 }
 #site-logo{
-	width: 428px;
-	height: 60px;
+	width: 165px;
+	height: 50px;
 }
 /* ## Title Area
 ---------------------------------------------------------------------- */
@@ -174,7 +210,7 @@
 /* ## Responsive Menu
 ---------------------------------------------------------------------- */
 .responsive-menu-icon {
-    margin-top: 12px;
+    margin-top: 5px;
 }
 .responsive-menu-icon .icon-list2 {
     width: 40px;
@@ -222,10 +258,6 @@
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-.footer-widgets .wrap {
-	max-width: 800px;
-}
-	
 @supports (display: grid) {
 .footer-widgets .wrap {
 	display: grid;

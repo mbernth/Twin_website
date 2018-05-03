@@ -10,15 +10,15 @@ html {
 
 /* Chrome fix */
 body > div {
-    @include font(1.6, 2.6);
+    @include font(1.8, 2.8);
 }
 
 body {
 	background-color: $color-white;
 	color: $color-black;
 	font-family: $font-bread;
-	@include font(1.6, 2.6);
-	font-weight: 300;
+	@include font(1.8, 2.8);
+	font-weight: 400;
 	margin: 0;
 }
 
@@ -39,7 +39,7 @@ textarea:focus,
 }
 
 a {
-	color: $color-primary;
+	color: $color-active;
 	text-decoration: none;
 	
 	-webkit-transition: all 0.2s ease-in-out;
@@ -51,7 +51,7 @@ a {
 
 a:hover,
 a:focus {
-	color: $color-accent-three;
+	color: tint($color-active, 40%);
 	text-decoration: none;
 }
 
@@ -123,7 +123,7 @@ h5,
 h6 {
 	color: $color-primary;
 	font-family: $font-headlines;
-	font-weight: 700;
+	font-weight: 400;
 	margin: 0 0 20px 0;
 }
 

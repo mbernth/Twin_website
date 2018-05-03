@@ -109,13 +109,19 @@
 }
 /* ### Site Containers Full-width 
 --------------------------------------------- */
+.full-width-content .site-inner .content .entry,
+.full-width-content .site-inner .content .gridcontainer.coll1 .wrap,
+.full-width-content .site-inner .content .gridcontainer.coll1 .row_headline{
+	max-width: 720px;
+}
 .home-section.full-width-content .site-inner .content .entry{
 	padding: 80px 0;
-	max-width: 920px;
+	max-width: 720px;
 }
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
 .gridcontainer{
+	padding: 80px 0;
 	.row_headline{
 		max-width: 920px;
 	}
@@ -125,6 +131,7 @@
 }
 .gridcontainer{
 	.backimage{
+		height: 50vh;
 		min-height: 400px;
 	}
 }
@@ -234,21 +241,20 @@
 .statements{
 	margin-top: 140px;
 	h1{
-		@include font(3.2, 3.2);
 		&:nth-child(1){
-			left: calc(50% - 400px);
-			top: calc(50% - 106px);
+			left: 10%;
+			top: calc(50% - 122px);
 			animation: slide 2s 1s ease-in-out both;
 		}
 		&:nth-child(2){
-			left: calc(50% - 450px);
+			left: 10%;
 			top: calc(50% - 39px);
-			animation: slide 2s 2s ease-in-out both;
+			animation: slide 2s 2.5s ease-in-out both;
 		}
 		&:nth-child(3){
-			left: calc(50% - 429px);
-			top: calc(50% - -28px);
-			animation: slide 2s 3s ease-in-out both;
+			left: 10%;
+			top: calc(50% - -45px);
+			animation: slide 2s 3.5s ease-in-out both;
 		}
 	}
 }
@@ -367,9 +373,6 @@
 	
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-.footer-widgets .wrap {
-	max-width: 920px;
-}
 /* ## Social Icons
 ---------------------------------------------------------------------- */
 

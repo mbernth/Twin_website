@@ -13,7 +13,7 @@
 .responsive-menu-icon .icon-list2 {
     width: 30px;
     height: 30px;
-	color: $color-white;
+	color: $color-primary;
 	-moz-transition:    all .4s ease-in-out;
 	-ms-transition:     all .4s ease-in-out;
 	-o-transition:      all .4s ease-in-out;
@@ -49,7 +49,7 @@
 }
 
 ul.genesis-nav-menu li{
-	background-color: $color-primary;
+	background-color: tint($color-primary, 80%);
 }
 ul.genesis-nav-menu li:last-child{
 }
@@ -80,10 +80,10 @@ ul.genesis-nav-menu li li{
 }
 .genesis-nav-menu.responsive-menu .menu-item {
 	margin: 0;
-	border-bottom: 1px solid $color-secondary;
+	border-top: 1px solid tint($color-primary, 90%);
 }
 .genesis-nav-menu.responsive-menu .menu-item:first-child {
-	border-top: 1px solid $color-secondary;
+	border-top: 1px solid tint($color-primary, 60%);
 }
 
 	

@@ -75,7 +75,7 @@ function mono_flexible_grids() {
 							
 							echo '<section class="wysiwyg">';
 								
-								if( ($selected == 'non black' || $selected == 'non grey' || $selected == 'non')){
+								if( ($selected == 'non black' || $selected == 'non grey' || $selected == 'non secondary' || $selected == 'non active' || $selected == 'non')){
 									if($headline){
 									echo '<h1>' . $headline . '</h1>';
 									}
@@ -148,7 +148,7 @@ function mono_flexible_grids() {
 								$image =  get_sub_field('image_link');
 								$btn = get_sub_field ( 'image_button' );
 								
-								if( get_sub_field('content') && $selected == 'non' || $selected == 'non black' || $selected == 'non grey' || $selected == 'non') {
+								if( get_sub_field('content') && $selected == 'non' || $selected == 'non black' || $selected == 'non grey' || $selected == 'non secondary' || $selected == 'non active' || $selected == 'non') {
 									// Full field images
 									echo '<section class="backimage" style="background-image: url('.$image['url'].');"></section>';
 									

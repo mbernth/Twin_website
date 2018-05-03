@@ -6,7 +6,7 @@
 	margin-top:0px;
 	width:100%;
 	float:left;
-	background-color: $color-primary;
+	background-color: tint($color-primary, 90%);
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition:    all 0.5s ease-in-out;
 	-ms-transition:     all 0.5s ease-in-out;
@@ -45,7 +45,7 @@
 
 .header-full-width .title-area {
 	float:left;
-	width: 220px;
+	width: 102px;
 }
 
 .site-title {
@@ -86,8 +86,9 @@
     display: block;
 }
 #site-logo{
-	width: 220px;
+	width: 102px;
 	height: 31px;
+	fill: $color-primary;
 }
 
 /* ## Widget Area
@@ -106,7 +107,7 @@
 	float: left;
 	padding:0px;
 	width:100%;
-	background-color: shade($color-primary, 40%);
+	background-color: tint($color-primary, 80%);
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition:    all 0.5s ease-in-out;
 	-ms-transition:     all 0.5s ease-in-out;
@@ -120,17 +121,17 @@
 	.simple-social-icons ul li{
 		margin: 0px !important;
 		a{
-			background-color: $color-primary !important;
+			background-color: tint($color-primary, 90%) !important;
 			border-radius: 0px;
-			color: $color-white !important;
+			color: $color-primary !important;
 			border: 0px #ffffff solid !important;
 			font-size: 16px;
 			padding: 10px 15px !important;
 			margin-left: 2px;
 			&:hover{
-				background-color: shade($color-primary, 20) !important;
+				background-color: tint($color-primary, 90%) !important;
 				border-radius: 0px;
-				color: $color-white !important;
+				color: $color-secondary !important;
 				border: 0px #ffffff solid !important;
 				font-size: 16px;
 				padding: 10px 15px !important;
@@ -151,7 +152,7 @@
 	text-transform:uppercase;
 	letter-spacing:1px;
 	text-align:right;
-	color:$color-white;
+	color:$color-primary;
 	float: right;
 }
 

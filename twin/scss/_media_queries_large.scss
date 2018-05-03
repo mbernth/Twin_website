@@ -39,9 +39,14 @@
 ---------------------------------------------------------------------- */
 /* ### Site Containers Full-width 
 --------------------------------------------- */
+.full-width-content .site-inner .content .entry,
+.full-width-content .site-inner .content .gridcontainer.coll1 .wrap,
+.full-width-content .site-inner .content .gridcontainer.coll1 .row_headline{
+	max-width: 860px;
+}
 .home-section.full-width-content .site-inner .content .entry{
 	padding: 100px 0;
-	max-width: 1200px;
+	max-width: 860px;
 }
 /* ## Grid Containers
 ---------------------------------------------------------------------- */
@@ -89,7 +94,15 @@
 }
 /* ### Grid Containers coloured backgrounds
 --------------------------------------------- */
-
+.gridcontainer.black,
+.gridcontainer.grey,
+.gridcontainer.secondary,
+.gridcontainer.active{
+	padding: 80px 0;
+}
+.gridcontainer.non{
+	padding: 0;
+}
 /* # Common Classes
 ---------------------------------------------------------------------------------------------------- */
 /* ## Avatar
@@ -117,7 +130,7 @@
 .statements{
 	margin-top: 140px;
 	h1{
-		@include font(3.6, 3.6);
+		@include font(4.8, 4.8);
 	}
 }
 /* ## Genesis eNews Extended
@@ -138,7 +151,7 @@
 ---------------------------------------------------------------------------------------------------- */
 .genesis-nav-menu a {
 	padding: 15px 20px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.15em;
 }
 /* ## Accessible Menu
 ---------------------------------------------------------------------- */
@@ -185,9 +198,6 @@
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-.footer-widgets .wrap {
-	max-width: 1200px;
-}
 /* ## Social Icons
 ---------------------------------------------------------------------- */
 

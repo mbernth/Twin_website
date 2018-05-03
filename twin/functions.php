@@ -3,7 +3,7 @@
 include_once( get_template_directory() . '/lib/init.php' );
 
 //* Include Icons
-// include_once( get_stylesheet_directory() . '/lib/svg_icomoon.php' );
+include_once( get_stylesheet_directory() . '/lib/svg_icomoon.php' );
 
 //* Setup Theme
 include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
@@ -26,7 +26,7 @@ define( 'CHILD_THEME_VERSION', '1.0.0' );
 add_action( 'wp_enqueue_scripts', 'genesis_sample_google_fonts' );
 function genesis_sample_google_fonts() {
 	// Google fonts
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=PT+Sans+Narrow:700|Source+Sans+Pro:400,400i,600,600i&amp;subset=latin-ext', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=PT+Sans+Narrow|Source+Sans+Pro:400,400i,600,600i,900', array(), CHILD_THEME_VERSION );
 	// Responsive menu
 	wp_enqueue_script( 'monobrighton-responsive-menu', get_bloginfo( 'stylesheet_directory' ) . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0' );
 	// Dashicons

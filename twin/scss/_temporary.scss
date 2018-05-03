@@ -1,0 +1,18 @@
+/* Temporary pages
+---------------------------------------------------------------------------------------------------- */
+
+.temporary-landing .site-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 157px);
+    .content-sidebar-wrap {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 55.625em) {
+    .temporary-landing .site-inner{
+        min-height: calc(100vh - 186px);
+    }
+}

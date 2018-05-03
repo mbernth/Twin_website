@@ -105,6 +105,7 @@ License URI: https://github.com/mbernth/Twin_website/blob/master/LICENSE
 	@import "owl_transitions";
 	@import "quotes";
 	@import "accordion";
+	@import "wpml";
 
 /*
 	@import "timeline";
@@ -180,7 +181,7 @@ License URI: https://github.com/mbernth/Twin_website/blob/master/LICENSE
 	## Frontpage
 */
 	@import "page_frontpage";
-
+	@import "temporary";
 /*
 # Post Types
 	## Cases
