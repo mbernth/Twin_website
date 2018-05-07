@@ -183,7 +183,8 @@
 
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu a:focus,
-.nav-primary .genesis-nav-menu .current-menu-item > a {
+.nav-primary .genesis-nav-menu .current-menu-item > a,
+.nav-primary .genesis-nav-menu .current-page-ancestor > a{
 	color: $color-secondary;
 	text-decoration: none;
 }

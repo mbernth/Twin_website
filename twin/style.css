@@ -2569,10 +2569,20 @@ th {
   background-color: #d6d7d8; }
 
 .gridcontainer.secondary {
-  background-color: #E75A56; }
+  background-color: #E75A56;
+  color: #f2f3f3; }
+  .gridcontainer.secondary a {
+    color: white; }
+    .gridcontainer.secondary a:hover, .gridcontainer.secondary a:focus, .gridcontainer.secondary a:active {
+      color: #dfedf2; }
 
 .gridcontainer.active {
-  background-color: #5DA7BF; }
+  background-color: #5DA7BF;
+  color: #f2f3f3; }
+  .gridcontainer.active a {
+    color: #bedce5; }
+    .gridcontainer.active a:hover, .gridcontainer.active a:focus, .gridcontainer.active a:active {
+      color: #9ecad9; }
 
 /*
 # Flexible Grid
@@ -4028,7 +4038,8 @@ a.wpml-ls-link {
 
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu a:focus,
-.nav-primary .genesis-nav-menu .current-menu-item > a {
+.nav-primary .genesis-nav-menu .current-menu-item > a,
+.nav-primary .genesis-nav-menu .current-page-ancestor > a {
   color: #E75A56;
   text-decoration: none; }
 
@@ -4565,6 +4576,7 @@ p.entry-meta {
 */
 /*
 # Sidebars
+	## sidebar-menu
 */
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
@@ -4572,12 +4584,8 @@ p.entry-meta {
   margin-top: 20px;
   display: block;
   clear: both;
-  float: left; }
-
-.sidebar li {
-  border-bottom: 1px dotted #32373e;
-  margin-bottom: 10px;
-  padding-bottom: 10px; }
+  float: left;
+  width: 100%; }
 
 .sidebar p:last-child,
 .sidebar ul > li:last-child {
@@ -4587,6 +4595,25 @@ p.entry-meta {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #E75A56; }
+
+.sidebar .widget-title {
+  color: #f2f3f3;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px; }
+
+/* ## Sidebar menu
+---------------------------------------------------------------------- */
+.sidebar .menu li {
+  margin-bottom: 20px; }
+  .sidebar .menu li:last-child {
+    margin-bottom: 0; }
+  .sidebar .menu li a {
+    color: white; }
+    .sidebar .menu li a:hover, .sidebar .menu li a:focus, .sidebar .menu li a:active {
+      color: #dfedf2; }
+
+.sidebar .menu .current_page_item a {
+  color: #32373e; }
 
 /*
 # Footer Widgets
@@ -6417,6 +6444,9 @@ p.entry-meta {
   .sidebar {
     margin-top: 0px;
     float: inherit; }
+  .sidebar .widget {
+    margin-bottom: 40px;
+    padding: 40px; }
   /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
   /* ## Social Icons

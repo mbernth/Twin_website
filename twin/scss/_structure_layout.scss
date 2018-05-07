@@ -117,7 +117,25 @@
 }
 .gridcontainer.secondary{
 	background-color: $color-secondary;
+	color: $color-white;
+	a{
+		color: tint($color-active, 100%);
+		&:hover,
+		&:focus,
+		&:active{
+			color: tint($color-active, 80%);
+		}
+	}
 }
 .gridcontainer.active{
 	background-color: $color-active;
+	color: $color-white;
+	a{
+		color: tint($color-active, 60%);
+		&:hover,
+		&:focus,
+		&:active{
+			color: tint($color-active, 40%);
+		}
+	}
 }
