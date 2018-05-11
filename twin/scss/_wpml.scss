@@ -2,7 +2,7 @@
 ---------------------------------------------------------------------------------------------------- */
 
 a.wpml-ls-link{
-    color:$color-primary;
+    color:tint($color-primary, 100%);
     font-weight: 900;
     letter-spacing: 0.2em;
     .wpml-ls-native{

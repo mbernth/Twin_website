@@ -6,7 +6,7 @@
 	margin-top:0px;
 	width:100%;
 	float:left;
-	background-color: tint($color-primary, 90%);
+	background-color: tint($color-primary, 0%);
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition:    all 0.5s ease-in-out;
 	-ms-transition:     all 0.5s ease-in-out;
@@ -88,7 +88,7 @@
 #site-logo{
 	width: 102px;
 	height: 31px;
-	fill: $color-primary;
+	fill: $color-secondary;
 }
 
 /* ## Widget Area
@@ -107,7 +107,7 @@
 	float: left;
 	padding:0px;
 	width:100%;
-	background-color: tint($color-primary, 80%);
+	background-color: tint($color-primary, 10%);
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition:    all 0.5s ease-in-out;
 	-ms-transition:     all 0.5s ease-in-out;
@@ -121,15 +121,15 @@
 	.simple-social-icons ul li{
 		margin: 0px !important;
 		a{
-			background-color: tint($color-primary, 90%) !important;
+			background-color: tint($color-primary, 0%) !important;
 			border-radius: 0px;
-			color: $color-primary !important;
+			color: tint($color-primary, 100%) !important;
 			border: 0px #ffffff solid !important;
 			font-size: 16px;
 			padding: 10px 15px !important;
 			margin-left: 2px;
 			&:hover{
-				background-color: tint($color-primary, 90%) !important;
+				background-color: tint($color-primary, 10%) !important;
 				border-radius: 0px;
 				color: $color-secondary !important;
 				border: 0px #ffffff solid !important;
