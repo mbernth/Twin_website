@@ -2541,7 +2541,7 @@ th {
       max-width: 640px; }
 
 .gridcontainer .backimage {
-  min-height: 250px;
+  min-height: 50vh;
   background-size: cover;
   background-position: 50% 50%; }
 
@@ -3091,6 +3091,7 @@ img.alignright,
   margin-bottom: 0; }
   .owl-carousel .featured-section .image-section {
     height: 50vh;
+    min-height: auto;
     /* border-bottom: 10vh solid rgba(240, 77, 70, .7); */ }
 
 .statements {
@@ -4477,7 +4478,8 @@ p.entry-meta {
   padding-top: 40px; }
 
 .featured-section .image-section {
-  height: 50vh; }
+  height: 50vh;
+  min-height: 284px; }
 
 /* ## Case grid
 ---------------------------------------------------------------------- */
@@ -5531,6 +5533,8 @@ p.entry-meta {
     max-width: 800px; }
   /* ## Featured image
 ---------------------------------------------------------------------- */
+  .featured-section .image-section {
+    min-height: 410px; }
   /* ## Case grid
 ---------------------------------------------------------------------- */
   /* # Sidebars
@@ -6288,7 +6292,7 @@ p.entry-meta {
     .gridcontainer .wrap {
       max-width: 920px; }
   .gridcontainer .backimage {
-    height: 50vh;
+    height: 100%;
     min-height: 400px; }
   @supports (display: grid) {
     .gridcontainer.coll2 .wrap {
@@ -6446,6 +6450,8 @@ p.entry-meta {
     max-width: 920px; }
   /* ## Featured image
 ---------------------------------------------------------------------- */
+  .featured-section .image-section {
+    min-height: 500px; }
   /* ## Case grid
 ---------------------------------------------------------------------- */
   /* # Sidebars
@@ -7263,6 +7269,8 @@ p.entry-meta {
     max-width: 1200px; }
   /* ## Featured image
 ---------------------------------------------------------------------- */
+  .featured-section .image-section {
+    min-height: 640px; }
   /* ## Case grid
 ---------------------------------------------------------------------- */
   /* # Sidebars

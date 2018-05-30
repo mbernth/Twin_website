@@ -96,12 +96,13 @@ function mono_frontpage_slider() {
 		
 		echo '</div>';
 		
+		if($stateOne):
 		echo '<div class="statements">';
 			echo '<h1><a href="#born">'.$stateOne.'</a></h1>';
 			echo '<h1><a href="#byen">'.$stateTwo.'</a></h1>';
 			echo '<h1><a href="#forbedring">'.$stateThree.'</a></h1>';
 		echo '</div>';
-	
+		endif;
 	else :
 
     // no layouts found
