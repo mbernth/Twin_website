@@ -70,6 +70,7 @@ function mono_frontpage_slider() {
 		
 		// loop through the rows of data
     	while ( have_rows('slider') ) : the_row();
+			$imageCaption = get_sub_field(slider_image_caption);
 
         	if( get_row_layout() == 'slide' ):
 				
@@ -77,12 +78,10 @@ function mono_frontpage_slider() {
 				echo '<div class="featured-section" style="background-image:url( ';
 						the_sub_field('image');
 				echo ');"><div class="image-section">';
-				
-				/*
-				echo '<div class="slide_content"><h1>';
-						the_sub_field('text');
-				echo '</h1></div>';
-				*/
+
+				if ($imageCaption){
+					echo '<figcaption class="wp-caption-text">'.$imageCaption.'</figcaption>';
+				}
 	
 				echo '</div></div>';
 				echo '</div>';

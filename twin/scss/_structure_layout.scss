@@ -82,9 +82,22 @@
 }
 .gridcontainer{
 	.backimage{
+		position: relative;
 		min-height: 50vh;
 		background-size: cover;
-    	background-position: 50% 50%;
+		background-position: 50% 50%;
+		.wp-caption-text {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			color: #fff;
+			font-size: 12px;
+			font-size: 1.2rem;
+			line-height: 12px;
+			line-height: 1.2rem;
+			background-color: rgba(17, 51, 61,.35);
+			padding: 10px 20px;
+		}
 	}
 }
 .gridcontainer{

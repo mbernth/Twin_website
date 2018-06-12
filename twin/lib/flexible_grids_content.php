@@ -150,8 +150,13 @@ function mono_flexible_grids() {
 								
 								if( get_sub_field('content') && $selected == 'non' || $selected == 'non black' || $selected == 'non grey' || $selected == 'non secondary' || $selected == 'non active' || $selected == 'non') {
 									// Full field images
-									echo '<section class="backimage" style="background-image: url('.$image['url'].');"></section>';
-									
+									echo '<section class="backimage" style="background-image: url('.$image['url'].');">';
+										if(get_sub_field('image_caption')){
+											echo '<figcaption class="wp-caption-text">';
+												the_sub_field('image_caption');
+											echo '</figcaption>';
+										}
+									echo '</section>';
 									}else{
 										
 									echo '<section>';

@@ -2541,9 +2541,21 @@ th {
       max-width: 640px; }
 
 .gridcontainer .backimage {
+  position: relative;
   min-height: 50vh;
   background-size: cover;
   background-position: 50% 50%; }
+  .gridcontainer .backimage .wp-caption-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 12px;
+    line-height: 1.2rem;
+    background-color: rgba(17, 51, 61, 0.35);
+    padding: 10px 20px; }
 
 .gridcontainer .gridimage {
   min-width: 100%;
@@ -3090,9 +3102,21 @@ img.alignright,
   max-width: 100%;
   margin-bottom: 0; }
   .owl-carousel .featured-section .image-section {
+    position: relative;
     height: 50vh;
     min-height: auto;
     /* border-bottom: 10vh solid rgba(240, 77, 70, .7); */ }
+    .owl-carousel .featured-section .image-section .wp-caption-text {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      color: #fff;
+      font-size: 12px;
+      font-size: 1.2rem;
+      line-height: 12px;
+      line-height: 1.2rem;
+      background-color: rgba(17, 51, 61, 0.35);
+      padding: 10px 20px; }
 
 .statements {
   position: absolute;
@@ -4468,7 +4492,20 @@ p.entry-meta {
   background-size: cover; }
 
 .featured-image .featured-section {
-  background-position: 50% 50%; }
+  position: relative;
+  background-position: 50% 35%; }
+
+.featured-image .featured-section .image-section .wp-caption-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 12px;
+  line-height: 1.2rem;
+  background-color: rgba(17, 51, 61, 0.35);
+  padding: 10px 20px; }
 
 .content-sidebar .featured-section,
 .sidebar-content .featured-section {
@@ -5533,8 +5570,6 @@ p.entry-meta {
     max-width: 800px; }
   /* ## Featured image
 ---------------------------------------------------------------------- */
-  .featured-section .image-section {
-    min-height: 410px; }
   /* ## Case grid
 ---------------------------------------------------------------------- */
   /* # Sidebars
@@ -6450,8 +6485,6 @@ p.entry-meta {
     max-width: 920px; }
   /* ## Featured image
 ---------------------------------------------------------------------- */
-  .featured-section .image-section {
-    min-height: 500px; }
   /* ## Case grid
 ---------------------------------------------------------------------- */
   /* # Sidebars
@@ -7269,8 +7302,6 @@ p.entry-meta {
     max-width: 1200px; }
   /* ## Featured image
 ---------------------------------------------------------------------- */
-  .featured-section .image-section {
-    min-height: 640px; }
   /* ## Case grid
 ---------------------------------------------------------------------- */
   /* # Sidebars

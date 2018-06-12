@@ -192,10 +192,18 @@ function single_post_featured_image() {
 	if ( (is_single() || is_page()) && has_post_thumbnail() ) :
 	
 		$img = genesis_get_image( array( 'format' => 'src' ) );
-		printf( '<div class="featured-section" style="background-image:url(%s);"><div class="image-section"></div></div>', $img );
+		printf( '<div class="featured-section" style="background-image:url(%s);">', $img );
+		echo '<div class="image-section">';
+		if(get_field('image_caption')){
+			echo '<figcaption class="wp-caption-text">';
+				the_field('image_caption');
+			echo '</figcaption>';
+		}
+		echo '</div></div>';
+		// printf( '<div class="featured-section" style="background-image:url(%s);"><div class="image-section"></div></div>', $img );
 		
-		elseif( (! is_front_page()) ):
-		printf( '<div class="image-section" style="background-color:#231f20;"></div>', $img );
+		// elseif( (! is_front_page()) ):
+		// printf( '<div class="image-section" style="background-color:#231f20;"></div>', $img );
 		
 		
 	endif;
